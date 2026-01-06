@@ -11,7 +11,7 @@ export default function Navbar() {
   return (
     <>
       {/* Navbar */}
-      <nav className="fixed top-0 left-0 w-full z-50 bg-gray-50 text-black font-serif">
+      <nav className="fixed top-0 left-0 w-full z-50 bg-gray-50 text-gray-700 font-serif">
         <div className="max-w-7xl mx-auto flex items-center justify-between p-4">
           {/* Logo */}
           <div className="flex items-center gap-2 text-xl font-bold">
@@ -22,12 +22,12 @@ export default function Navbar() {
               height={40}
               className="rounded-full"
             />
-            <span>AwDigitals</span>
+            <a href="/"><span className="text-green-500">AW</span>Digital</a>
           </div>
 
           {/* Desktop Links */}
           <div className="hidden md:flex gap-6 text-sm font-semibold">
-            <Link href="/">Find Jobs</Link>
+            <Link href="/findJobs">Find Jobs</Link>
             <Link href="/about">Companies</Link>
             <Link href="/services">My Profile</Link>
             <Link href="/contact">Contact</Link>
@@ -74,7 +74,7 @@ export default function Navbar() {
         </div>
 
         <div className="flex flex-col gap-5 p-6 text-sm font-semibold">
-          <Link href="/" onClick={() => setOpen(false)}>Find Jobs</Link>
+          <Link href="/" onClick={() => setOpen(false)} >Find Jobs</Link>
           <Link href="/about" onClick={() => setOpen(false)}>Companies</Link>
           <Link href="/services" onClick={() => setOpen(false)}>My Profile</Link>
           <Link href="/contact" onClick={() => setOpen(false)}>Contact</Link>

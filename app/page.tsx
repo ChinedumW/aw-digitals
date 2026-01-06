@@ -1,47 +1,25 @@
-import Navbar from "./components/navbar";
+import Navbar from "@/app/components/navbar";
+import Image from "next/image";
+import AuthForm from "./components/Authforms";
 
 export default function Home() {
   return (
-    <main className="relative min-h-screen pt-20">
-      <Navbar/>
-      {/* Hero Section */}
-      <section className="relative h-[85vh] w-full">
-        {/* Background Image */}
-        <div
-          className="absolute inset-0 bg-cover bg-center"
-          style={{
-            backgroundImage:
-              "url('/img2.jpg')" // put image in /public
-          }}
-        />
+    <main className="min-h-screen bg-white px-4 sm:px-8 lg:px-20">
+      <Navbar />
 
-        {/* Overlay */}
-        <div className="absolute inset-0 bg-white/80 backdrop-blur-sm" />
+      <section className="flex flex-col lg:flex-row items-center justify-center gap-12 py-12">
+        {/* FORM */}
+        <AuthForm />
 
-        {/* Content */}
-        <div className="relative z-10 flex h-full items-center">
-          <div className="max-w-7xl mx-auto px-6  text-left">
-            <h1 className="text-2xl md:text-5xl font-bold text-gray-900 mb-4">
-              Find Your Next Opportunity 💼
-            </h1>
-
-            <p className="text-gray-600 max-w-xl mb-6">
-              Discover jobs, connect with companies, and build your future —
-              all in one place.
-            </p>
-
-            {/* Search Bar */}
-            <div className="flex max-w-xl bg-white rounded-xl shadow-lg overflow-hidden">
-              <input
-                type="text"
-                placeholder="Search jobs, companies, skills..."
-                className="flex-1 px-4 py-3 outline-none"
-              />
-              <button className="bg-green-500 px-6 text-white font-medium">
-                Search
-              </button>
-            </div>
-          </div>
+        {/* IMAGE */}
+        <div className="lg:flex justify-center">
+          <Image
+            src="/undraw_connection_ts3f.svg"
+            alt="Professional working illustration"
+            width={500}
+            height={500}
+            priority
+          />
         </div>
       </section>
     </main>
