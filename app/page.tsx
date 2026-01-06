@@ -20,8 +20,8 @@ export default function Home() {
 
         {/* Content */}
         <div className="relative z-10 flex h-full items-center">
-          <div className="max-w-7xl mx-auto px-6">
-            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+          <div className="max-w-7xl mx-auto px-6  text-left">
+            <h1 className="text-2xl md:text-5xl font-bold text-gray-900 mb-4">
               Find Your Next Opportunity 💼
             </h1>
 
