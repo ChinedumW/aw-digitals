@@ -80,9 +80,9 @@ export default function Navbar() {
           <Link href="/contact" onClick={() => setOpen(false)}>Contact</Link>
 
           <div className="mt-6 flex flex-col gap-3">
-            <button className="flex items-center justify-center gap-2 px-4 py-2 border bg-amber-50 rounded-sm">
+            <a  className="flex items-center justify-center gap-2 px-4 py-2 border bg-amber-50 rounded-sm">
               <Download size={16} /> Upload Resume
-            </button>
+            </a>
             <button className="px-4 py-2 bg-green-500 text-white rounded-sm">
               Sign Up
             </button>
