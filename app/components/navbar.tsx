@@ -22,7 +22,7 @@ export default function Navbar() {
               height={40}
               className="rounded-full"
             />
-            <a href="/"><span className="text-green-500">AW</span>Digital</a>
+            <a href="/"><span className="text-green-500">AW</span>Link</a>
           </div>
 
           {/* Desktop Links */}
