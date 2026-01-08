@@ -1,7 +1,7 @@
 import Navbar from "@/app/components/navbar";
 import { Search } from "lucide-react";
 
-export default function Home() {
+export default function find() {
   return (
     <main className="bg-gray-100 min-h-screen">
       <Navbar />
