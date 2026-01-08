@@ -74,7 +74,7 @@ export default function Navbar() {
         </div>
 
         <div className="flex flex-col gap-5 p-6 text-sm font-semibold">
-          <Link href="/" onClick={() => setOpen(false)} >Find Jobs</Link>
+          <Link href="/find-jobs" onClick={() => setOpen(false)} >Find Jobs</Link>
           <Link href="/about" onClick={() => setOpen(false)}>Companies</Link>
           <Link href="/services" onClick={() => setOpen(false)}>My Profile</Link>
           <Link href="/contact" onClick={() => setOpen(false)}>Contact</Link>
