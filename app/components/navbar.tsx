@@ -27,7 +27,7 @@ export default function Navbar() {
 
           {/* Desktop Links */}
           <div className="hidden md:flex gap-6 text-sm font-semibold">
-            <Link href="/findJobs">Find Jobs</Link>
+            <Link href="/find-jobs">Find Jobs</Link>
             <Link href="/about">Companies</Link>
             <Link href="/services">My Profile</Link>
             <Link href="/contact">Contact</Link>
