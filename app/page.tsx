@@ -184,149 +184,143 @@ export default function Home() {
         </div>
       </section>
 
-    
-<section
-  className="relative w-full bg-center bg-cover py-24"
-  style={{
-    backgroundImage: "url('/img2.jpg')",
-  }}
->
-  {/* Soft gray overlay for blending */}
-  <div className="absolute inset-0 bg-[#f6f7f9]/90"></div>
+      <section
+        className="relative w-full bg-center bg-cover py-24"
+        style={{
+          backgroundImage: "url('/img2.jpg')",
+        }}
+      >
+        {/* Soft gray overlay for blending */}
+        <div className="absolute inset-0 bg-[#f6f7f9]/90"></div>
 
-  {/* Content */}
-  <div className="relative max-w-6xl mx-auto px-6 lg:px-16 grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
-    {/* LEFT CONTENT */}
-    <div>
-      <h2 className="text-4xl font-bold text-black mb-4">
-        Who is AWLink for?
-      </h2>
-      <p className="text-gray-600 text-lg leading-relaxed">
-        AWLink is built for anyone navigating their professional journey —
-        from hiring the right talent to finding meaningful career
-        opportunities.
-      </p>
-    </div>
-
-    {/* RIGHT FAQ DROPDOWNS */}
-    <div className="space-y-4">
-      {faqs.map((item, index) => {
-        const isOpen = openIndex === index;
-
-        return (
-          <div
-            key={index}
-            className="bg-white border border-gray-200 rounded-xl overflow-hidden transition"
-          >
-            <button
-              onClick={() => setOpenIndex(isOpen ? null : index)}
-              className="w-full flex items-center justify-between px-6 py-5 text-left hover:bg-gray-50 transition"
-            >
-              <span className="font-semibold text-black">
-                {item.question}
-              </span>
-              <span
-                className={`transform transition ${
-                  isOpen ? "rotate-180" : ""
-                }`}
-              >
-                ▾
-              </span>
-            </button>
-
-            {isOpen && (
-              <div className="px-6 pb-5 text-gray-600 text-sm leading-relaxed">
-                {item.answer}
-              </div>
-            )}
+        {/* Content */}
+        <div className="relative max-w-6xl mx-auto px-6 lg:px-16 grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+          {/* LEFT CONTENT */}
+          <div>
+            <h2 className="text-4xl font-bold text-black mb-4">
+              Who is AWLink for?
+            </h2>
+            <p className="text-gray-600 text-lg leading-relaxed">
+              AWLink is built for anyone navigating their professional journey —
+              from hiring the right talent to finding meaningful career
+              opportunities.
+            </p>
           </div>
-        );
-      })}
-    </div>
-  </div>
-</section>
 
-<footer className="w-full bg-green-400 border-t border-gray-200">
-  <div className="max-w-7xl mx-auto px-6 lg:px-16 py-12">
-    <div className="grid grid-cols-1 md:grid-cols-3 gap-10 items-start">
+          {/* RIGHT FAQ DROPDOWNS */}
+          <div className="space-y-4">
+            {faqs.map((item, index) => {
+              const isOpen = openIndex === index;
 
-      {/* BRAND */}
-      <div>
-        <h3 className="text-xl font-bold text-black">AWLink</h3>
-        <p className="mt-3 text-gray-600 text-sm leading-relaxed max-w-sm">
-          Connecting verified professionals with businesses and
-          opportunities worldwide.
-        </p>
-      </div>
+              return (
+                <div
+                  key={index}
+                  className="bg-white border border-gray-200 rounded-xl overflow-hidden transition"
+                >
+                  <button
+                    onClick={() => setOpenIndex(isOpen ? null : index)}
+                    className="w-full flex items-center justify-between px-6 py-5 text-left hover:bg-gray-50 transition"
+                  >
+                    <span className="font-semibold text-black">
+                      {item.question}
+                    </span>
+                    <span
+                      className={`transform transition ${
+                        isOpen ? "rotate-180" : ""
+                      }`}
+                    >
+                      ▾
+                    </span>
+                  </button>
 
-      {/* QUICK LINKS */}
-      <div>
-        <h4 className="text-sm font-semibold text-black mb-4">
-          Platform
-        </h4>
-        <ul className="space-y-3 text-sm text-gray-600">
-          <li>
-            <a href="#" className="hover:text-black transition">
-              Find Jobs
-            </a>
-          </li>
-          <li>
-            <a href="#" className="hover:text-black transition">
-              Hire Talent
-            </a>
-          </li>
-          <li>
-            <a href="#" className="hover:text-black transition">
-              My Profile
-            </a>
-          </li>
-          <li>
-            <a href="#" className="hover:text-black transition">
-              Contact
-            </a>
-          </li>
-        </ul>
-      </div>
+                  {isOpen && (
+                    <div className="px-6 pb-5 text-gray-600 text-sm leading-relaxed">
+                      {item.answer}
+                    </div>
+                  )}
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      </section>
 
-      {/* LEGAL */}
-      <div>
-        <h4 className="text-sm font-semibold text-black mb-4">
-          Legal
-        </h4>
-        <ul className="space-y-3 text-sm text-gray-600">
-          <li>
-            <a href="#" className="hover:text-black transition">
-              Privacy Policy
-            </a>
-          </li>
-          <li>
-            <a href="#" className="hover:text-black transition">
-              Terms of Service
-            </a>
-          </li>
-          <li>
-            <a href="#" className="hover:text-black transition">
-              Cookie Policy
-            </a>
-          </li>
-        </ul>
-      </div>
+      <footer className="w-full bg-green-400 border-t border-gray-200">
+        <div className="max-w-7xl mx-auto px-6 lg:px-16 py-12">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-10 items-start">
+            {/* BRAND */}
+            <div>
+              <h3 className="text-xl font-bold text-black">AWLink</h3>
+              <p className="mt-3 text-gray-600 text-sm leading-relaxed max-w-sm">
+                Connecting verified professionals with businesses and
+                opportunities worldwide.
+              </p>
+            </div>
 
-    </div>
+            {/* QUICK LINKS */}
+            <div>
+              <h4 className="text-sm font-semibold text-black mb-4">
+                Platform
+              </h4>
+              <ul className="space-y-3 text-sm text-gray-600">
+                <li>
+                  <a href="#" className="hover:text-black transition">
+                    Find Jobs
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="hover:text-black transition">
+                    Hire Talent
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="hover:text-black transition">
+                    My Profile
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="hover:text-black transition">
+                    Contact
+                  </a>
+                </li>
+              </ul>
+            </div>
 
-    {/* BOTTOM BAR */}
-    <div className="mt-10 pt-6 border-t border-gray-200 flex flex-col sm:flex-row items-center justify-between gap-4">
-      <p className="text-xs text-gray-500">
-        © {new Date().getFullYear()} AWLink. All rights reserved.
-      </p>
+            {/* LEGAL */}
+            <div>
+              <h4 className="text-sm font-semibold text-black mb-4">Legal</h4>
+              <ul className="space-y-3 text-sm text-gray-600">
+                <li>
+                  <a href="#" className="hover:text-black transition">
+                    Privacy Policy
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="hover:text-black transition">
+                    Terms of Service
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="hover:text-black transition">
+                    Cookie Policy
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
 
-      <p className="text-xs text-gray-500">
-        Built for professionals, powered by trust.
-      </p>
-    </div>
-  </div>
-</footer>
+          {/* BOTTOM BAR */}
+          <div className="mt-10 pt-6 border-t border-gray-200 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <p className="text-xs text-gray-500">
+              © {new Date().getFullYear()} AWLink. All rights reserved.
+            </p>
 
+            <p className="text-xs text-gray-500">
+              Built for professionals, powered by trust.
+            </p>
+          </div>
+        </div>
+      </footer>
     </main>
   );
 }
